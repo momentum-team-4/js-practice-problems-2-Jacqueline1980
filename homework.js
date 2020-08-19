@@ -6,17 +6,55 @@
 // If the potential member is not in the array, return the array unchanged.
 // If the potential member is in the array, remove all instances of it from the array.
 
+function remove (members, removedMembers) {
+    let removedItems = []
+    for (let member of members){
+        if (member !== removedMembers) {
+            removedItems.push(member)
+        }
+    }
+   return removedItems 
+}
+
+
 // 2. Revisit your "remove" function. Make sure that it does not change the original
 // array but instead returns a new array.
+
+
 
 // 3. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
 
+function sum (numbers) {
+    let sum = 0;
+    for (let number of numbers) {
+        sum += number;
+
+    }
+    return sum
+}
+
 // 4. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
 
+function average () {
+        console.log(sum / Array.length);
+    }
+ 
+
+
+
+    
+
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
+function minimum (nums) {
+  let smallestNum = nums.reduce(function(current, num) {
+      if (num.length < current.length) {
+          return num}
+
+      }
+  
 
 // 6. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to
@@ -41,6 +79,11 @@
 // Note 2: Selection sort can be implemented using one array. Read the explanation at
 // https://courses.cs.vt.edu/csonline/Algorithms/Lessons/SelectionSort/index.html
 // to see how. This may make more sense to you.
+
+function selectionSort (array, numbers){
+    var arrayCopy = array.slice();
+}
+
 
 // 7. Create a function called `textList` that takes an array and joins its elements
 // into a string separated by commas.
